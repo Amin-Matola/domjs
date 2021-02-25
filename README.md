@@ -25,5 +25,19 @@ There are many ways we can select an element using the library...
 A complete set of all the classes for this library can be easily accessed by using ```dom``` function and a string of CSS selector for the element, as:
 
 ```javascript
-var body = dom("body")
+var body = dom("body");
 ```
+
+These function returns the ```Encryption``` class's object, which extends from all classes, including the Base Class.
+We can use that object then to manipulate the item however we like.
+
+For instance, if we wanted to change the background of our body variable / element above to blue, we'd simply do:
+
+```javascript
+// select body tag
+var body = dom("body");
+
+// Set the element to blue background
+body.background("#0000ff")
+```
+

@@ -53,4 +53,27 @@ var body = dom("body");
 // Set the element to blue background and color(white) or (#ffffff)
 body.background("#0000ff").color("white");
 ```
+**N.B**: In the above methods, if the given parameter(s) is empty, then that specific value will be returned...
+For instance, if we were to call ```body.color()``` then the result would be the color of that element.
 
+
+# Element Attributes Class
+
+This class extends from the main class, and deals with element attributes, which may include classes, id's, names etc.
+The class supports getting, setting, checking and adding for attributes of an element.
+
+The class can be initialized by using global functions like **d(item), dom(item)** or by initializing using **new ClassName**.
+Below is a proper usage of this class.
+
+```javascript
+// select h1 tag
+var h1 = dom("h1");
+
+// check if an element has the given class
+h1.hassClass("amin"); // true if it has, false otherwise
+h1.get("class"); // Gets value of this element's class
+h1.add("class", "something"); // Add class something to this item
+h1.set("class", "someclass another etc"); // Sets given string as class of this element
+h1.removeClass("className"); / removes the given class from this element
+h1.join([item1, item2 ... itemN]); Joins given items, separating them with a space
+```

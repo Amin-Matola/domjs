@@ -84,10 +84,10 @@ Below are the list of all the methods described in this class
 ```javascript
 // check if an element has the given class
 h1.hassClass("amin"); // true if it has, false otherwise
-h1.get("class"); // Gets value of this element's class
+h1.get("class"); // Gets value of this element's class or given attribute
 h1.add("class", "something"); // Add class something to this item
 h1.set("class", "someclass another etc"); // Sets given string as class of this element
-h1.removeClass("className"); / removes the given class from this element
+h1.removeClass("className"); // removes the given class from this element
 h1.join([item1, item2 ... itemN]); // Joins given items, separating them with a space
 ```
 

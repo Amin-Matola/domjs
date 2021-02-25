@@ -1,4 +1,4 @@
-# domjs
+# DOM.js DOCUMENTATION
 
 **DOM JS** is a library written purely in *Javascript*, a web language now used in many purposes.
 
@@ -135,3 +135,12 @@ validator.is_number([]); // false
 validator.is_string("amin"); // true
 validator.is_tag("amin"); // false
 ```
+No doubt, this suits our tests, though we may realize we are missing some more validations here.
+
+# Encryptions
+
+The class also is not a base class, and this one extends from the ```Item_Validation``` class...
+These class is at the ```peak``` of the whole lot of available classes, and that means, this class is the sub (est) class of all classes, and inherits all available classes.
+The class is useful for encryptions and simply uses **caesar** encryption algorithm to encrypt elemets.
+
+Just as the above classes, this class can be

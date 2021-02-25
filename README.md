@@ -54,7 +54,7 @@ var body = dom("body");
 body.background("#0000ff").color("white");
 ```
 **N.B**: In the above methods, if the given parameter(s) is empty, then that specific value will be returned...
-For instance, if we were to call ```body.color()``` then the result would be the color of that element.
+For instance, if we were to call ```body.color()``` then the result would be the color of that element, null if no color is set.
 
 
 # Element Attributes Class
@@ -91,4 +91,23 @@ h1.removeClass("className"); // removes the given class from this element
 h1.join([item1, item2 ... itemN]); // Joins given items, separating them with a space
 ```
 
+# Item Validation Class
 
+This class extends from the ```Element_Attributes``` class above, and is used to validate/check given objects.
+The items checked include: *Arrays, Objects, Strings, Numbers, Tags* and also checks if the given element exists, plus checking the equality of two items.
+The proper instantiation doesn't differ from the previous classes, so below is how we could use it.
+
+***example.html***
+```html
+<div id='somediv'>I am sample div</div>
+```
+
+Now in our javascript, we would say
+
+```javascript
+var somediv = new Item_Validation("#somediv");
+somediv.exist(); // Returns true because its available
+
+var someFalseDiv = new Item_Validation("#falsediv");
+someFalseDiv.exist(); // false, not defined
+```

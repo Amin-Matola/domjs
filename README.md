@@ -140,7 +140,29 @@ No doubt, this suits our tests, though we may realize we are missing some more v
 # Encryptions
 
 The class also is not a base class, and this one extends from the ```Item_Validation``` class...
-These class is at the ```peak``` of the whole lot of available classes, and that means, this class is the sub (est) class of all classes, and inherits all available classes.
+
+This class is at the ```peak``` of the whole lot of available classes, and that means, this class is the sub (est) class of all classes, 
+and inherits all available classes.
 The class is useful for encryptions and simply uses **caesar** encryption algorithm to encrypt elemets.
 
-Just as the above classes, this class can be
+Just as the above classes, this class can be declared the following way:
+
+
+```javascript
+
+// Define the encryption key (between 1 to 26)
+var key = 15
+
+// Get instance object of this class, selecting an element
+var paragraph = dom("p");
+
+/**
+ * The above will select all the items matching the selector
+ * Now encrypt all of the selected elements as below, 
+ * note that if text is given, then given text will replace all the elements' text
+ * */
+paragraph.encrypt(text = "", depth = key);
+
+// Decrypt the given item back
+paragraph.decrypt("", key);
+```

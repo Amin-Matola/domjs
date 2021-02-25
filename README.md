@@ -7,7 +7,7 @@ This library is completely easy to use, and in below lines, the proper use of th
 
 # Installation
 
-To use **DOM JS** in your project simple requires [Downloading](https://raw.githubusercontent.com/Amin-Matola/domjs/master/dom-v1.0.0/dom.min.js) a minified version of the ***dom.min.js*** file and including it in your preferred directory, e.g **assets**.
+To use **DOM JS** in your project simply requires [Downloading](https://raw.githubusercontent.com/Amin-Matola/domjs/master/dom-v1.0.0/dom.min.js) a minified version of the ***dom.min.js*** file and including it in your preferred directory of your project, e.g **project/assets/dom.min.js**.
 
 Include a file in your **html** file as:
 

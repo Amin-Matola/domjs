@@ -74,10 +74,14 @@ The above description takes advantage of the default function (dom), but below i
 ```javascript
 
 // Instantiate this class by selecting an element
-var h1 = Element_Attributes("h1");
+var h1 = new Element_Attributes("h1");
 ```
+
+
 Below are the list of all the methods described in this class
-```
+
+
+```javascript
 // check if an element has the given class
 h1.hassClass("amin"); // true if it has, false otherwise
 h1.get("class"); // Gets value of this element's class

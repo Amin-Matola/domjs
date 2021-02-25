@@ -15,4 +15,15 @@ Include a file in your **html** file as:
 <script src="path/to/dom.min.js"></script>
 ```
 
-Reaching this point, you're ready to start using **dom js**
+Reaching this point, we're now ready to start using **dom js**
+
+Now that we have our library included, lets now see some of the uses of the ***dom.js*** library.
+
+# Selecting an Element
+
+There are many ways we can select an element using the library...
+A complete set of all the classes for this library can be easily accessed by using ```dom``` function and a string of CSS selector for the element, as:
+
+```javascript
+var body = dom("body")
+```

@@ -166,3 +166,13 @@ paragraph.encrypt(text = "", depth = key);
 // Decrypt the given item back
 paragraph.decrypt("", key);
 ```
+
+The above function (decrypt/encrypt) is same as:
+
+```javascript
+
+paragraph.decrypt(dom("p").getText(), key);
+
+// or
+
+paragraph.decrypt(paragraph.getText(), key);

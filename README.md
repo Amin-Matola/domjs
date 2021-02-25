@@ -11,7 +11,7 @@ To use **DOM JS** in your project simple requires [Downloading](https://raw.gith
 
 Include a file in your **html** file as:
 
-```
+```html
 <script src="path/to/dom.min.js"></script>
 ```
 

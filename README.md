@@ -105,9 +105,33 @@ The proper instantiation doesn't differ from the previous classes, so below is h
 Now in our javascript, we would say
 
 ```javascript
+
 var somediv = new Item_Validation("#somediv");
 somediv.exist(); // Returns true because its available
 
 var someFalseDiv = new Item_Validation("#falsediv");
 someFalseDiv.exist(); // false, not defined
+```
+As already said, this class has some more functions... as before, this class also supports method chaining.
+
+Below are some more functions from withing this class, that can be used to validate Objects / Items
+
+```javascript
+
+// get instance of this class
+var validator = dom("");
+
+// validate few items here
+validator.equal(2, 2); // true
+validator.equal(2, 3); // false
+
+
+validator.is_object({
+                      name: "Amin", 
+                      location: "Blantyre"
+                      }); // true
+validator.is_array([]); // true
+validator.is_number([]); // false
+validator.is_string("amin"); // true
+validator.is_tag("amin"); // false
 ```

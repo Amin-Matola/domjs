@@ -50,7 +50,7 @@ For instance, if we were to set the color for this (body) element, we could call
 // select body tag
 var body = dom("body");
 
-// Set the element to blue background
+// Set the element to blue background and color(white) or (#ffffff)
 body.background("#0000ff").color("white");
 ```
 

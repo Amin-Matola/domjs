@@ -19,7 +19,7 @@ Reaching this point, we're now ready to start using **dom js**
 
 Now that we have our library included, lets now see some of the uses of the ***dom.js*** library.
 
-# Selecting an Element
+# Selecting an element
 
 There are many ways we can select an element using the library...
 A complete set of all the classes for this library can be easily accessed by using ```dom``` function and a string of CSS selector for the element, as:
@@ -38,6 +38,19 @@ For instance, if we wanted to change the background of our body variable / eleme
 var body = dom("body");
 
 // Set the element to blue background
-body.background("#0000ff")
+body.background("#0000ff");
+```
+
+The library also supports method chaining, a technique which enables methods from object to be called continously buy using a dot (.)
+
+In our above example, another method can be called from the object, which will also operate on the same element.
+For instance, if we were to set the color for this (body) element, we could call a **object** . *color*("color")
+
+```javascript
+// select body tag
+var body = dom("body");
+
+// Set the element to blue background
+body.background("#0000ff").color("white");
 ```
 

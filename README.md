@@ -1,6 +1,6 @@
 # domjs
 
-***DOM JS*** is a library written purely in *Javascript*, a web language now used in many purposes.
+**DOM JS** is a library written purely in *Javascript*, a web language now used in many purposes.
 
 It's initial purpose was to simplify daily programming tasks, so making these project public may help others who are struggling out there.
 This library is completely easy to use, and in below lines, the proper use of this project is described.
@@ -68,12 +68,23 @@ Below is a proper usage of this class.
 ```javascript
 // select h1 tag
 var h1 = dom("h1");
+```
+The above description takes advantage of the default function (dom), but below instantiation is also true
 
+```javascript
+
+// Instantiate this class by selecting an element
+var h1 = Element_Attributes("h1");
+```
+Below are the list of all the methods described in this class
+```
 // check if an element has the given class
 h1.hassClass("amin"); // true if it has, false otherwise
 h1.get("class"); // Gets value of this element's class
 h1.add("class", "something"); // Add class something to this item
 h1.set("class", "someclass another etc"); // Sets given string as class of this element
 h1.removeClass("className"); / removes the given class from this element
-h1.join([item1, item2 ... itemN]); Joins given items, separating them with a space
+h1.join([item1, item2 ... itemN]); // Joins given items, separating them with a space
 ```
+
+

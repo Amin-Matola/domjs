@@ -164,13 +164,13 @@ class Amin_Manipulator{
 	    	return html;
 	    }
 
-	    createPopUp(v = "", color = "#000000"){
+	    createPopUp(v, color, bg){
 	    	var ele 	= document.createElement("dialog"), style;
 	     	ele.setAttribute("open", true);
 	     	ele.innerHTML = this.getPopupHtml(v);
-	     	style 	  	  = "width:30%;background:"+color;
+	     	style 	  	  = "width:30%;background:"+bg;
 	     	style 	 	 += ";top:20px;border:0px solid black;";
-	     	style 	 	 += "color:white;padding-top:0px;";
+	     	style 	 	 += "color:"+color+";padding-top:0px;";
 	     	style 		 += "box-shadow:2px 2px 2px lightgrey;border-radius:5px";
 	     
 	     	ele.style 	  = style;
@@ -181,7 +181,7 @@ class Amin_Manipulator{
 	    /* *
 	     * Show the alert box
 	     * */
-	     popUp(what, v="", color = "#000000;"){
+	     popUp(what, v="", color = "#000000;", bg  = "#ffffff"){
 	     	var e 	= "('"+v+"')";
  	 
 	     	try{
